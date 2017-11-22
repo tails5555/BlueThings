@@ -18,7 +18,7 @@ import org.json.XML;
 public class StationDAO{
 	public List<Station> findByStSrch(String stSrch) throws MalformedURLException, IOException, JSONException{
 		List<Station> stationList=new ArrayList<Station>();
-		HttpURLConnection connection=(HttpURLConnection) new URL("http://ws.bus.go.kr/api/rest/stationinfo/getStationByName?serviceKey=09E5I22CgJDmsPluG0%2FPgQA6tN2M4VCDOqoZOnW3LpiZ5fmRVDF5JDz2D%2FMmngQ19xcOFEZ8jtoFCa21Xajxeg%3D%3D&"+"stSrch="+stSrch).openConnection();
+		HttpURLConnection connection=(HttpURLConnection) new URL("http://ws.bus.go.kr/api/rest/stationinfo/getStationByName?serviceKey=5bD3XdOL8WNVvRQ7GM265ksawhaS%2FfUq4zCUx0Z8fxBoYR%2BMf%2BRB8oM1rkAv6sBaY105oMNkkeDmQcPemWznjw%3D%3D&"+"stSrch="+stSrch).openConnection();
 		connection.connect(); // 이는 인터넷을 이용해서 xml 파일을 얻어오는 작업이다. 여기서 serviceKey는 인증번호 같은 거고, strSrch는 버스 노선 번호
 		BufferedInputStream bis=new BufferedInputStream(connection.getInputStream()); // Java 내에서 xml 문자열들을 입력하기 위해 InputStream을 쓴다. 보통 자료를 받아올 때 InputStream을 쓰기 마련.
 		BufferedReader reader=new BufferedReader(new InputStreamReader(bis)); // Buffer된 xml 파일을 읽어들인다.
