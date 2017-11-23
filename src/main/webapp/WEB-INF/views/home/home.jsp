@@ -13,6 +13,8 @@
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+
 <style>
 div.row div {
 	line-height: 100px;
@@ -239,33 +241,40 @@ div.row div {
 				<label>검색할 정류장 장소</label>
 				<form:input path="stSrch" class="form-control" placeholder="검색할 정류장 장소"/>
 				<button type="submit" class="btn btn-primary"><i class="glyphicon glyphicon-search"></i> 검색</button>
-			</form:form>
+		
 		</div>
 		<hr/>
+	
+	
 		<div class="row">
 			<div class="col-sm-7" style="text-align: center;">
 				<strong> 전등 스위치 </strong>
 			</div>
 			<div class="col-sm-3" style="text-align: center;">
-				<label class="switch"> <input type="checkbox"
-					class="switch-input" checked> <span class="switch-label"
+			
+			<label class="switch"> <input name="samul" type="checkbox"
+					class="switch-input"  <c:if test="${ param.samul eq true }">checked</c:if>> <span class="switch-label"
 					data-on="On" data-off="Off"></span> <span class="switch-handle"></span>
 
 				</label>
 			</div>
+
 			<div class="col-sm-7" style="text-align: center;">
 				<strong> 콘센트 스위치 </strong>
 			</div>
 			<div class="col-sm-3" style="text-align: center;">
-				<label class="switch"> <input type="checkbox"
-					class="switch-input" checked> <span class="switch-label"
-					data-on="On" data-off="Off"></span> <span class="switch-handle"></span>
+				<label class="switch"> <input name="kang" type="checkbox"
+					class="switch-input"  <c:if test="${ param.kang eq true }">checked</c:if> /> <span class="switch-label"
+					data-on="On" data-off="Off" > <span class="switch-handle"></span>
 				</label>
 			</div>
-		</div>
+		</div>		
+	</div>	<button type="submit" class="btn btn-primary"><i class="glyphicon glyphicon-search"></i> 변경</button>
+			
+		</form:form>
+	
 
-	</div>
-
+</from>
 
 
 </body>
