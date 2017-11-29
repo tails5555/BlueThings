@@ -248,7 +248,7 @@ div.row div {
 	
 		<div class="row">
 			<div class="col-sm-7" style="text-align: center;">
-				<strong> 전등 스위치 </strong>
+				<strong> 콘센트 스위치 </strong>
 			</div>
 			<div class="col-sm-3" style="text-align: center;">
 			
@@ -258,18 +258,9 @@ div.row div {
 
 				</label>
 			</div>
-
-			<div class="col-sm-7" style="text-align: center;">
-				<strong> 콘센트 스위치 </strong>
-			</div>
-			<div class="col-sm-3" style="text-align: center;">
-				<label class="switch"> <input name="kang" type="checkbox"
-					class="switch-input"  <c:if test="${ param.kang eq true }">checked</c:if> /> <span class="switch-label"
-					data-on="On" data-off="Off" > <span class="switch-handle"></span>
-				</label>
-			</div>
-		</div>		
-	</div>	<button type="submit" class="btn btn-primary"><i class="glyphicon glyphicon-search"></i> 변경</button>
+<button type="submit" class="btn btn-primary" style="margin-top: 40px"><i class="glyphicon glyphicon-search"></i> 변경</button>
+	
+	</div>	
 			
 		</form:form>
 	
