@@ -74,11 +74,12 @@ public class HomeController{
 				            robot.keyPress(KeyEvent.VK_E);
 				            robot.keyRelease(KeyEvent.VK_ALT);
 				            robot.keyRelease(KeyEvent.VK_E);
+				            robot.delay(500);
 				            robot.keyPress(KeyEvent.VK_ALT);
 				            robot.keyPress(KeyEvent.VK_R);
 				            robot.keyRelease(KeyEvent.VK_ALT);
 				            robot.keyRelease(KeyEvent.VK_R);
-				    
+				            robot.delay(500);
 				            robot.keyPress(KeyEvent.VK_ENTER);
 				            robot.keyRelease(KeyEvent.VK_ENTER);
 				            robot.delay(2000);
@@ -116,11 +117,12 @@ public class HomeController{
 				            robot.keyPress(KeyEvent.VK_E);
 				            robot.keyRelease(KeyEvent.VK_ALT);
 				            robot.keyRelease(KeyEvent.VK_E);
+				            robot.delay(500);
 				            robot.keyPress(KeyEvent.VK_ALT);
 				            robot.keyPress(KeyEvent.VK_R);
 				            robot.keyRelease(KeyEvent.VK_ALT);
 				            robot.keyRelease(KeyEvent.VK_R);
-				         
+				            robot.delay(500);
 				            robot.keyPress(KeyEvent.VK_ENTER);
 				            robot.keyRelease(KeyEvent.VK_ENTER);
 				            robot.delay(2000);

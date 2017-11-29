@@ -253,19 +253,16 @@ div.row div {
 			<div class="col-sm-3" style="text-align: center;">
 			
 			<label class="switch"> <input name="samul" type="checkbox"
-					class="switch-input"  <c:if test="${ param.samul eq true }">checked</c:if>> <span class="switch-label"
+					class="switch-input"  <c:if test="${ search.samul eq true }">checked</c:if>> <span class="switch-label"
 					data-on="On" data-off="Off"></span> <span class="switch-handle"></span>
 
 				</label>
 			</div>
-<button type="submit" class="btn btn-primary" style="margin-top: 40px"><i class="glyphicon glyphicon-search"></i> 변경</button>
+			<button type="submit" class="btn btn-primary" style="margin-top: 40px"><i class="glyphicon glyphicon-search"></i> 변경</button>
 	
 	</div>	
 			
 		</form:form>
-	
-
-</from>
 
 
 </body>
